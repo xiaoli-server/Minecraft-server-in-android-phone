@@ -1,5 +1,5 @@
 apt update #更新镜像源
-termux-setup-storge #获取访问文件权限
+termux-setup-storage #获取访问文件权限
 mkdir /storage/emulated/0/mcserver #创建服务器文件夹
 apt install openjdk-21 #下载java21
 cd /storage/emulated/0/mcserver #服务器文件将在该文件夹里下载
