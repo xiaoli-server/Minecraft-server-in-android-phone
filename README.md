@@ -3,7 +3,7 @@
 
 在下载该脚本之前，需要您先自行下载MT管理器与termux，termux在github里有，直接搜索就行，而MT管理器可以在应用商店里下载。做完准备工作后，我们就可以准备开始了。
 
-首先，用MT管理器找到您下载好的tar.gz安装包，并将其移动到/storage/emulated/0/这个目录下并解压缩。
+首先，需要在本页面里下载Serverdocument.tar.gz文件，之后用MT管理器找到您下载好的tar.gz安装包，并将其移动到/storage/emulated/0/这个目录下并解压缩。
 
 解压完成后，我们打开termux，先输入指令cd /storage/emulated/0/Serverdocument/以进入脚本所在文件夹，之后输入bash mcserver.sh以用来运行安装脚本。之后，我们就可以双手离开屏幕休息一会了，等10min左右，你的服务器就自动运行了。
 
