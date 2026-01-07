@@ -7,6 +7,8 @@
 
 解压完成后，我们打开termux，先输入指令cd /storage/emulated/0/Serverdocument/以进入脚本所在文件夹，之后输入bash mcserver.sh以用来运行安装脚本。之后，我们就可以双手离开屏幕休息一会了，等10min左右，你的服务器就自动运行了。
 
+为保证零基础小白也能快速入门，我将server.properties文件中online-mode（正版验证）选项设置为false，并更改了motd、Max-player选项分别进行了更改，如果您了解我的世界服务端server.properties文件如何配置的话，可以到/storage/emulated/0/mcserver/.fabric/server/这个路径下找server.properties进行更改。
+
 服务器运行之后，先输入指令op 玩家名 以获得管理员权限。如果您在游玩之后不想继续玩了，请在命令行输入stop指令以停止服务器（其实直接删termux后台也没什么事）如果您想重新运行服务器，则先输入cd /storage/emulated/0/mcserver/.fabric/server指令，之后输入java -jar 1.21.11-server.jar以运行服务器脚本
 
 还有一件需要注意的一件事，运行后只有在局域网内的玩家可以连得上服务器，如果需要让外网玩家也游玩则需要使用frp内网穿透
