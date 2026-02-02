@@ -14,10 +14,10 @@ curl -OJ https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.18.4/1.1.1/serve
 cd /storage/emulated/0/mcserver/#进入运行脚本所在文件夹
 java -jar fabric-server-mc.1.21.11-loader.0.18.4-launcher.1.1.1.jar #运行启动脚本
 cd /storage/emulated/0/mcserver/.fabric/server/
-rm eula.txt #删除原eula协议
-rm server.properties #删除原配置文件
+
 cd #回到termux所在文件夹
 mv eula.txt /storage/emulated/0/mcserver/.fabric/server #替换eula至服务器文件夹
 mv server.properties /storage/emulated/0/mcserver/.fabric/server #替换服务器配置文件至服务器文件夹
+cd /storage/emulated/0/mcserver/.fabric/server/
 java -jar 1.21.11-server.jar #开服
 
