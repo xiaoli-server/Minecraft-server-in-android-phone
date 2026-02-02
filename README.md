@@ -3,7 +3,7 @@
 
 在下载该脚本之前，需要您先自行下载MT管理器与termux，termux在github里有，直接搜索就行，而MT管理器可以在应用商店里下载。做完准备工作后，我们就可以准备开始了。
 
-每一个版本下载方式都会有一定的差异，请以每一个版本的下载方式为准。
+每一个版本下载方式都会有一定的差异，请以每一个版本的下载方式为准，如有问题去我的网站：xiaolistudio.com.cn查询。
 
 为保证零基础小白也能快速入门，我将server.properties文件中online-mode（正版验证）选项设置为false，并更改了motd、Max-player选项分别进行了更改，如果您了解我的世界服务端server.properties文件如何配置的话，可以到/storage/emulated/0/mcserver/.fabric/server/这个路径下找server.properties进行更改。
 
