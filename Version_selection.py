@@ -154,7 +154,7 @@ if result != "":
         print("已成功将结果写入mcserver12.sh的第12行！")
     except FileNotFoundError:
         print("错误：找不到mcserver12.sh文件，请确保脚本和mcserver12.sh在同一个文件夹！")
-        
+
 # 替换mcserver12.sh的15,21行版本号
 if num:
     try:
@@ -173,6 +173,4 @@ if num:
             f.writelines(lines)
         print(f"已替换15、21行版本号为：{num}")
     except FileNotFoundError:
-        print("找不到mcserver12.sh文件！")
-
         print("找不到mcserver12.sh文件！")
