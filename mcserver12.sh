@@ -4,13 +4,12 @@ mkdir /storage/emulated/0/mcserver #创建服务器文件夹
 apt install openjdk-21 #下载java21
 apt install git #安装git工具
 apt install python #安装python
-curl -O https://github.com/xiaoli-server/Minecraft-server-in-android-phone/releases/tag/1.2/Version_selection.py
 python Version_selection.py #运行版本选择库
-curl -O https://github.com/xiaoli-server/Minecraft-server-in-android-phone/eula.txt #下载配置好的eula协议
-curl -O https://github.com/xiaoli-server/Minecraft-server-in-android-phone/server.properties #下载配置好的服务器配置文件
+curl -O https://raw.githubusercontent.com/xiaoli-server/Minecraft-server-in-android-phone/refs/heads/main/eula.txt #下载配置好的eula协议
+curl -O https://raw.githubusercontent.com/xiaoli-server/Minecraft-server-in-android-phone/refs/heads/main/server.properties #下载配置好的服务器配置文件
 cd /storage/emulated/0/mcserver #服务器文件将在该文件夹里下载
 
-java -jar fabric-server-mc.1.21.11-loader.0.18.4-launcher.1.1.1.jar #运行安装程序
+curl -OJ https://meta.fabricmc.net/v2/versions/loader/1.21/0.18.4/1.1.1/server/jar
 cd /storage/emulated/0/mcserver/.fabric/server/ #进入运行脚本所在文件夹
 java -jar 1.21.11-server.jar #运行启动脚本
 rm eula.txt #删除原eula协议
@@ -19,3 +18,4 @@ cd #回到termux所在文件夹
 mv eula.txt /storage/emulated/0/mcserver/.fabric/server #替换eula至服务器文件夹
 mv server.properties /storage/emulated/0/mcserver/.fabric/server #替换服务器配置文件至服务器文件夹
 java -jar 1.21.11-server.jar #开服
+
