@@ -155,15 +155,19 @@ if result != "":
     except FileNotFoundError:
         print("错误：找不到mcserver12.sh文件，请确保脚本和mcserver12.sh在同一个文件夹！")
 
-# 替换mcserver12.sh的15,21行版本号
+# 替换mcserver12.sh的13,15,21行版本号
 if num:
     try:
         with open("mcserver12.sh", "r") as f:
             lines = f.readlines()
         
+       # 替换第13行（索引12）的1.21.11
+        if len(lines) >= 13:
+            lines[12] = lines[12].replace("1.21.11", num)
+        
         # 替换第15行（索引14）的1.21.11
         if len(lines) >= 15:
-            lines[13] = lines[13].replace("1.21.11", num)
+            lines[14] = lines[14].replace("1.21.11", num)
         
         # 替换第21行（索引20）的1.21.11
         if len(lines) >= 21:
@@ -171,6 +175,6 @@ if num:
         
         with open("mcserver12.sh", "w") as f:
             f.writelines(lines)
-        print(f"已替换15、21行版本号为：{num}")
+        print(f"已替换13、15、21行版本号为：{num}")
     except FileNotFoundError:
         print("找不到mcserver12.sh文件！")
