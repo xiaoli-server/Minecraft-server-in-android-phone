@@ -134,11 +134,11 @@ elif num == "1.14":  # 我的世界1.14正式版
 else:
     print("输入无效！请输入1.14~1.21.11之间的正式版版本号")
 
-# 安全写入mcserver.sh的第12行
+# 安全写入mcserver12.sh的第12行
 if result != "":
     try:
-        # 读取mcserver.sh的所有行
-        with open("mcserver.sh", "r") as f:
+        # 读取mcserver12.sh的所有行
+        with open("mcserver12.sh", "r") as f:
             lines = f.readlines()
         
         # 自动补全到至少12行
@@ -149,16 +149,16 @@ if result != "":
         lines[11] = result + "\n"
         
         # 写回文件
-        with open("mcserver.sh", "w") as f:
+        with open("mcserver12.sh", "w") as f:
             f.writelines(lines)
-        print("已成功将结果写入mcserver.sh的第12行！")
+        print("已成功将结果写入mcserver12.sh的第12行！")
     except FileNotFoundError:
-        print("错误：找不到mcserver.sh文件，请确保脚本和mcserver.sh在同一个文件夹！")
+        print("错误：找不到mcserver12.sh文件，请确保脚本和mcserver12.sh在同一个文件夹！")
 
 # 替换mcserver.sh的13、15、21行版本号
 if num:
     try:
-        with open("mcserver.sh", "r") as f:
+        with open("mcserver12.sh", "r") as f:
             lines = f.readlines()
         
         # 替换第13行（索引12）的1.21.11
@@ -173,8 +173,8 @@ if num:
         if len(lines) >= 21:
             lines[20] = lines[20].replace("1.21.11", num)
         
-        with open("mcserver.sh", "w") as f:
+        with open("mcserver12.sh", "w") as f:
             f.writelines(lines)
         print(f"已替换13、15、21行版本号为：{num}")
     except FileNotFoundError:
-        print("找不到mcserver.sh文件！")
+        print("找不到mcserver12.sh文件！")
