@@ -143,6 +143,10 @@ if num:
        # 替换第8行（索引7）的1.21.11
         if len(lines) >= 8:
             lines[7] = lines[7].replace("1.21.11", num)
+
+        # 替换第11行（索引10）的1.21.11
+        if len(lines) >= 11:
+            lines[10] = lines[10].replace("1.21.11", num)
             
         # 替换第12行（索引11）的1.21.11
         if len(lines) >= 12:
