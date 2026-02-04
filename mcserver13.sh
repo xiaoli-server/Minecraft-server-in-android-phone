@@ -4,7 +4,7 @@ apt install openjdk-21 #下载java21
 apt install git #安装git工具
 apt install python #安装python
 curl -O https://raw.githubusercontent.com/xiaoli-server/Minecraft-server-in-android-phone/refs/heads/main/Version_selection13.py #下载版本储存库
-python Version_selection.py #运行版本选择库
+python Version_selection13.py #运行版本选择库
 mkdir /storage/emulated/0/mcserver/1.21.11 #创建服务器文件夹
 curl -O https://raw.githubusercontent.com/xiaoli-server/Minecraft-server-in-android-phone/refs/heads/main/eula.txt #下载配置好的eula协议
 curl -O https://raw.githubusercontent.com/xiaoli-server/Minecraft-server-in-android-phone/refs/heads/main/server.properties #下载配置好的服务器配置文件
