@@ -13,6 +13,6 @@ java -jar 1.21.11-server.jar #运行启动脚本
 rd eula.txt #删除原eula协议
 rd server.properties #删除原配置文件
 cd #回到termux所在文件夹
-mv eula.txt /storage/emulated/0/mcserver/.fabric/server #替换eula至服务器文件夹
-mv server.properties /storage/emulated/0/mcserver/.fabric/server #替换服务器配置文件至服务器文件夹
-java -jar 1.21.11-server.jar #开服
+mv eula.txt /storage/emulated/0/mcserver/ #替换eula至服务器文件夹
+mv server.properties /storage/emulated/0/mcserver/ #替换服务器配置文件至服务器文件夹
+java -jar fabric-server-mc.1.21.11-loader.0.18.4-launcher.1.1.1.jar #开服
