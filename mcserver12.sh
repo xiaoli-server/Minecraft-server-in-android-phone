@@ -13,11 +13,11 @@ cd /storage/emulated/0/mcserver #服务器文件将在该文件夹里下载
 curl -OJ https://meta.fabricmc.net/v2/versions/loader/1.21.11/0.18.4/1.1.1/server/jar
 cd /storage/emulated/0/mcserver/ #进入运行脚本所在文件夹
 java -jar fabric-server-mc.1.21.11-loader.0.18.4-launcher.1.1.1.jar #运行启动脚本
-cd /storage/emulated/0/mcserver/.fabric/server/
+cd /storage/emulated/0/mcserver/
 
 cd #回到termux所在文件夹
-mv eula.txt /storage/emulated/0/mcserver/.fabric/server #替换eula至服务器文件夹
-mv server.properties /storage/emulated/0/mcserver/.fabric/server #替换服务器配置文件至服务器文件夹
-cd /storage/emulated/0/mcserver/.fabric/server/
-java -jar 1.21.11-server.jar #开服
+mv eula.txt /storage/emulated/0/mcserver/ #替换eula至服务器文件夹
+mv server.properties /storage/emulated/0/mcserver/ #替换服务器配置文件至服务器文件夹
+cd /storage/emulated/0/mcserver/
+java -jar fabric-server-mc.1.21.11-loader.0.18.4-launcher.1.1.1.jar #开服
 
